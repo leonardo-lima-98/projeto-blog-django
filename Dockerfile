@@ -15,8 +15,8 @@ ENV PYTHONUNBUFFERED 1
 # e comente as subsequentes para evitar erro na leitura de diretórios.
 # COPY djangoapp /djangoapp
 # COPY scripts /scripts
-COPY ./djangoapp /djangoapp
-COPY ./scripts /scripts
+COPY djangoapp /djangoapp
+COPY scripts /scripts
 
 # Entra na pasta djangoapp no container
 WORKDIR /djangoapp
